@@ -126,6 +126,7 @@ const RightDetail = () => {
       setSaleitems([...saleitems, items(item.id, item.quantity, ticketnumber)]);
 
     });
+          // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [context.saleitems]);
 
   useEffect(() => {

@@ -159,6 +159,7 @@ const SearchField3 = () => {
       calSubTotal();
     }
     // console.log(tableItems);
+          // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tableItems, ondelete, context.tableItems]);
 
   if (productLoaded) {

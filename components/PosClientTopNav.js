@@ -25,13 +25,13 @@ const PosClientTopNav = () => {
     <div className=" p-2 px-4 divide-y bg-gradient-to-b from-[#191d22] to-[#4b5257] w-full bg-[url('/CoarseGrid.png')">
       <div className="flex flex-row px-4 items-center">
         <div className="flex flex-col flex-1">
-    <Link href="/login">
+    {/* <Link href="/login">
           <Image 
           width={10}
           height={50}
           src="/" 
           />
-         </Link>
+         </Link> */}
           <div className=" text-white"> Kwabena Epic</div>
         </div>
 

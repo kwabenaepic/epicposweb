@@ -32,6 +32,7 @@ export default function CashPayment({ show, setShow, getCashpaid, subtotal }) {
 
   useEffect(() => {
     context.receiptsid;
+          // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [amountPaid]);
 
   return (
