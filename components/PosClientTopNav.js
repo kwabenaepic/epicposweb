@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link'
+import Image from 'next/image'
 
 const PosClientTopNav = () => {
 
@@ -25,7 +26,11 @@ const PosClientTopNav = () => {
       <div className="flex flex-row px-4 items-center">
         <div className="flex flex-col flex-1">
     <Link href="/login">
-          <img src="/lock.png" width="50" height="100" className=" cursor-pointer" />
+          <Image 
+          width={10}
+          height={50}
+          src="/" 
+          />
          </Link>
           <div className=" text-white"> Kwabena Epic</div>
         </div>
