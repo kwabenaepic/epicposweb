@@ -18,7 +18,7 @@ import TablePagination from "@mui/material/TablePagination";
 import Autocomplete from "@mui/material/Autocomplete";
 import Link from "next/link";
 import SalesDrawer from "../../components/SalesDrawer";
-import ReportsNav from "./reportsNav";
+import ReportsNav from "../../components/ReportsNav";
 import Axios from "axios";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";

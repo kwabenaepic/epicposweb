@@ -4,7 +4,7 @@ import Image from "next/image";
 import tw from "tailwind-styled-components";
 import LeftNavigation from "../components/LeftNavigation";
 import HomeDashboard from "../components/HomeDashboard";
-import Login from "./Login";
+import Login from "./login";
 
 const Navigatior = () => {
   const isLoggedin = true;
