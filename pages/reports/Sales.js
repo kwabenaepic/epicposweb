@@ -160,7 +160,7 @@ const Sales = () => {
                   <div className="justify-end">
                     <DesktopDatePicker
                       className=""
-                      label="Date desktop"
+                      label=""
                       inputFormat="MM/DD/YYYY"
                       value={datefrom}
                       onChange={handleDatefrom}
@@ -170,7 +170,7 @@ const Sales = () => {
                   <div className="">To:</div>
                   <div className="justify-end">
                     <DesktopDatePicker
-                      label="Date desktop"
+                      label=""
                       inputFormat="MM/DD/YYYY"
                       value={dateto}
                       onChange={handleDateto}

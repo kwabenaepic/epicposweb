@@ -23,6 +23,8 @@ import Axios from "axios";
 import EditInventory from "../components/EditInventory";
 import AddInventory from "../components/AddInventory";
 // import TableRows from "./TableRows";
+import { supabase } from "../api";
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -88,24 +90,29 @@ const Inventory = () => {
     setOndelete(true);
   };
 
+  const getdata = ()=>{
+console.log(productList)
+  }
+
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
 
   const loadProducts = async () => {
-    // const response = await fetch("http://localhost:9999/api/v1/products");
-    // const data = await response.json();
-    // setProductList(data);
+    const { data, error } = await supabase
+    .from('product')
+    .select()
+    setProductList(data)
 
-    await fetch("http://localhost:9999/api/v1/products")
-      .then((response) => {
-        return response.json();
-      })
+    // await fetch("http://localhost:9999/api/v1/products")
+    //   .then((response) => {
+    //     return response.json();
+    //   })
 
-      .then((data) => {
-        setProductList(data);
-      });
+    //   .then((data) => {
+    //     setProductList(data);
+    //   });
   };
 
   useEffect(() => {
@@ -143,6 +150,13 @@ const Inventory = () => {
           <div className="flex-col p-8 w-full">
             <div className="border-b-2 mb-6 font-medium text-xl">Inventory</div>
             <div>
+            <button
+        onClick={getdata}
+        type="button"
+        className="w-50 h-50 text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-2 py-2 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
+      >
+
+      </button>
               <div className="flex flex-row items-center justify-end py-2 ">
                 <div className=" ">
                   <Autocomplete
@@ -307,6 +321,7 @@ const Inventory = () => {
             </div>
           </div>
         </div>
+
       </div>
       <EditInventory show={show} setShow={(bool) => setShow(bool)} />
       <AddInventory
