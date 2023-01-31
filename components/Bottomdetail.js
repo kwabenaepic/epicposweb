@@ -47,11 +47,13 @@ const Bottomdetail = (props) => {
       context.setAmountpaid(cashPaid);
       context.setBalance(context.amountpaid - context.subtotal);
     }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [context.amountpaid, context.tableItems]);
 
   useEffect(() => {
     // setBalance(cashPaid - props.subtotal);
     context.setBalance(context.amountpaid - context.subtotal);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [context.subtotal]);
   return (
     <div className="absolute inset-x-0 bottom-0 border-t-4 bg-white px-8 py-4 flex flex-row items-center ">
