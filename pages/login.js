@@ -16,7 +16,7 @@ const Login = () => {
           <form>
             <div className="mb-6">
               <div
-                for="email"
+                // for="email"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Your email
@@ -32,7 +32,7 @@ const Login = () => {
 
             <div className="mb-6">
               <label
-                for="password"
+                // for="password"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Your password
@@ -56,7 +56,7 @@ const Login = () => {
                 />
               </div>
               <label
-                for="terms"
+                // for="terms"
                 className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 I agree with the{" "}
