@@ -138,6 +138,7 @@ const RightDetail = () => {
   useEffect(() => {
     context.setTicketnumber(ticketnumber);
     console.log(ticketnumber);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ticketnumber]);
 
   return (
