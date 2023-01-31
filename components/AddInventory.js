@@ -115,7 +115,7 @@ export default function AddInventory({ showAddInventry, setShowAddInventry }) {
       console.log("Post was Okay");
       restFields();
     } else if (postresponse === 500) {
-      displayAlert
+      // displayAlert
       console.log("Post Error");
     } else {
       console.log("Network Error");

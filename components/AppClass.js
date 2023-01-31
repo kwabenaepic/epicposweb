@@ -13,10 +13,10 @@ function AppClass() {
   };
 
   //on every render
-  useEffect(() => {
-    setOverview(name)
-    console.log("I re rendered");
-  });
+  // useEffect(() => {
+  //   setOverview(name)
+  //   console.log("I re rendered");
+  // });
 
     //on first Render/Mount only - componentDidMount Alternative
        useEffect(() => {
