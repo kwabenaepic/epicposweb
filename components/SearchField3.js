@@ -124,7 +124,7 @@ const SearchField3 = () => {
     // const data = await response.json();
     // setProductList(data);
 
-    await fetch("http://localhost:9999/api/v1/products")
+    await fetch("http://localhost:9999/products")
       .then((response) => {
         return response.json();
       })

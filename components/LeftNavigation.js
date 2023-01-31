@@ -6,7 +6,7 @@ import { Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { InformationCircleIcon } from "@heroicons/react/24/solid";
 import { DocumentTextIcon } from "@heroicons/react/24/solid";
 import { FolderIcon } from "@heroicons/react/24/solid";
-import Link from "next/Link";
+import Link from "next/link";
 
 export class LeftNavigation extends Component {
   render() {
@@ -20,7 +20,7 @@ export class LeftNavigation extends Component {
             <div className=" text-white"> Home</div>
           </div>
         </Link>
-        <Link href="/Inventory">
+        <Link href="/inventory">
           <div className="flex flex-row px-3 py-3 space-x-2 cursor-pointer   ">
             <div>
               <FolderIcon className="h-6 w-6 text-[#ff9900] " />
@@ -28,7 +28,7 @@ export class LeftNavigation extends Component {
             <div className=" text-white"> Inventory</div>
           </div>
         </Link>
-        <Link href="/Employees">
+        <Link href="/employees">
           <div className="flex flex-row px-3 py-3 space-x-2 cursor-pointer  ">
             <div>
               <UsersIcon className="h-6 w-6 text-[#ff9900]" />
@@ -36,7 +36,7 @@ export class LeftNavigation extends Component {
             <div className=" text-white"> Employees</div>
           </div>
         </Link>
-        <Link href="/reports/Sales">
+        <Link href="/reports/sales">
           <div className="flex flex-row px-3 py-3 space-x-2 cursor-pointer  ">
             <div>
               <DocumentTextIcon className="h-6 w-6 text-[#ff9900]" />
@@ -44,7 +44,7 @@ export class LeftNavigation extends Component {
             <div className=" text-white"> Reports</div>
           </div>
         </Link>
-        <Link href="/Settings">
+        <Link href="/settings">
           <div className="flex flex-row px-3 py-3 space-x-2 cursor-pointer  ">
             <div>
               <Cog6ToothIcon className="h-6 w-6 text-[#ff9900]" />
@@ -52,7 +52,7 @@ export class LeftNavigation extends Component {
             <div className=" text-white"> Settings</div>
           </div>
         </Link>
-        <Link href="/About">
+        <Link href="/about">
           <div className="flex flex-row px-3 py-3 space-x-2 cursor-pointer  ">
             <div>
               <InformationCircleIcon className="h-6 w-6 text-[#ff9900]" />
@@ -61,7 +61,7 @@ export class LeftNavigation extends Component {
           </div>
         </Link>
 
-        <Link href="/PosClient">
+        <Link href="/posClient">
           <div className="flex flex-row px-3 py-3 space-x-2 cursor-pointer  ">
             <div>
               <ArrowLeftIcon className="h-6 w-6 text-[#ff9900]" />

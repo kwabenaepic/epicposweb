@@ -39,7 +39,7 @@ const ReorderList = () => {
     // const data = await response.json();
     // setProductList(data);
 
-    await fetch("http://localhost:9999/api/v1/reorderlist")
+    await fetch("http://localhost:9999/reorderlist")
       .then((response) => {
         return response.json();
       })

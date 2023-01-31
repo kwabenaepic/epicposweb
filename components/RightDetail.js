@@ -2,7 +2,7 @@ import React, { Children, useState, useContext, useEffect } from "react";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import { Cog6ToothIcon } from "@heroicons/react/24/solid";
 import { XMarkIcon } from "@heroicons/react/24/solid";
-import Link from "next/Link";
+import Link from "next/link";
 import Axios from "axios";
 import AppContext from "../components/AppContext";
 

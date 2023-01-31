@@ -16,9 +16,9 @@ import AddIcon from "@mui/icons-material/Add";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import TablePagination from "@mui/material/TablePagination";
 import Autocomplete from "@mui/material/Autocomplete";
-import Link from "next/Link";
+import Link from "next/link";
 import SalesDrawer from "../../components/SalesDrawer";
-import ReportsNav from "./ReportsNav";
+import ReportsNav from "./reportsNav";
 import Axios from "axios";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -82,7 +82,7 @@ const Sales = () => {
   };
 
   const loadSales = async () => {
-    await fetch("http://localhost:9999/api/v1/salereports")
+    await fetch("http://localhost:9999/salereports")
       .then((response) => {
         return response.json();
       })
@@ -94,7 +94,7 @@ const Sales = () => {
 
   const getSaleItem = async (ticketnumber, row) => {
     await fetch(
-      "http://localhost:9999/api/v1/productbyticketnumber/ticketnumber?ticketnumber=" +
+      "http://localhost:9999/productbyticketnumber/ticketnumber?ticketnumber=" +
         ticketnumber
     )
       .then((response) => {
@@ -186,7 +186,7 @@ const Sales = () => {
                       type="button"
                       className="w-5 h-5 bg-gradient-to-b from-yellow-500 via-yellow-500 to-yellow-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-800 font-medium rounded-lg text-x px-12 py-4 text-center  justify-center items-center inline-flex  "
                     >
-                      Show Range
+                      Range
                     </button>
                   </div>
                   <div className="justify-end">
