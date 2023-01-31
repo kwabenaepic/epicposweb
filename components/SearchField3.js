@@ -143,7 +143,7 @@ const SearchField3 = () => {
 
   useEffect(() => {
     if (ondelete == true) {
-      const result = 0;
+      var result = 0;
       // setSubtotal(0);
       context.setSubtotal(0);
       // tableItems.map((item) => {
