@@ -132,6 +132,7 @@ const RightDetail = () => {
   useEffect(() => {
     console.log(saleitems);
     console.log(data);
+            // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [saleitems]);
 
   useEffect(() => {
