@@ -1,13 +1,12 @@
 import { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import tw from "tailwind-styled-components";
 import LeftNavigation from "../components/LeftNavigation";
 import HomeDashboard from "../components/HomeDashboard";
 import Login from "./login";
 
 const Navigatior = () => {
-  const isLoggedin = true;
+  const isLoggedin = false;
   if (!isLoggedin) {
     return (
       <div className="flex flex-row h-screen w-screen">
@@ -30,16 +29,9 @@ const Navigatior = () => {
 
 export default function Home() {
   return (
-    <Wrapper>
+    <div className="flex h-screen w-full">
       <Navigatior />
-    </Wrapper>
+    </div>
   );
 }
 
-const Wrapper = tw.div`
-flex h-screen w-full
-`;
-
-const Main = tw.div`
-flex h-screen container
-`;
