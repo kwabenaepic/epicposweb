@@ -121,18 +121,16 @@ const RightDetail = () => {
   }
 
   useEffect(() => {
-
     context.saleitems.map((item) => {
       setSaleitems([...saleitems, items(item.id, item.quantity, ticketnumber)]);
-
     });
-          // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [context.saleitems]);
 
   useEffect(() => {
     console.log(saleitems);
     console.log(data);
-            // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [saleitems]);
 
   useEffect(() => {
@@ -149,7 +147,7 @@ const RightDetail = () => {
       <div className="flex flex-1 items-center justify-center absolute inset-x-0 bottom-0">
         <div className="flex flex-col space-y-2 w-full  items-center">
           <button
-                    onClick={restFields}
+            onClick={restFields}
             type="button"
             className="text-white w-5/6 bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-2xl px-20 py-6 text-center inline-flex items-center justify-center  dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
           >
