@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import "tailwindcss/tailwind.css";
 import AppContext from "../components/AppContext";
 import React, { useEffect, useState } from "react";
 
