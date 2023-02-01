@@ -46,7 +46,7 @@ const PosClient = () => {
         </div>
 
         <div className="flex flex-2  w-96 relative my-3">
-          {/* <RightDetail /> */}
+          <RightDetail />
         </div>
       </div>
     </div>
