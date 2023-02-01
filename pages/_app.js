@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 
 export default function App({
   Component,
-  pageProps: { session, ...pageProps },
+  pageProps
 }) {
   const [message, setMessage] = useState("default");
   const [receiptsid, setReceiptsid] = useState("")
@@ -33,7 +33,7 @@ export default function App({
        amountpaid, setAmountpaid, balance, setBalance, quantity, setQuantity, productid, setProductid, saleitems, setSaleitems, subtotal, setSubtotal,
        tableItems, setTableItems
        }}>
-        <Component {...pageProps} />
+         <Component {...pageProps} />
       </AppContext.Provider>
     // </SessionProvider>
   );
