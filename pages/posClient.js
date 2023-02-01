@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import LeftDetail from "../components/RightDetail";
+
 import PosClientTopNav from "../components/PosClientTopNav";
-import ProductTable from "../components/ProductTable";
-import Link from "next/link";
-import Axios from "axios";
 // import SearchField from "../components/SearchField";
 // import SearchField2 from "../components/SearchField2";
 import SearchField3 from "../components/SearchField3";

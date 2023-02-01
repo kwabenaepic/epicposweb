@@ -16,7 +16,7 @@ const Navigatior = () => {
     );
   }
   return (
-    <Wrapper>
+    <div className="flex h-screen w-full">
       <div className="flex flex-col ">
         <div className="bg-red-300 h-10 w-full"></div>
         <div className="flex flex-row h-screen w-full">
@@ -24,7 +24,7 @@ const Navigatior = () => {
           <HomeDashboard />
         </div>
       </div>
-    </Wrapper>
+    </div>
   );
 };
 
