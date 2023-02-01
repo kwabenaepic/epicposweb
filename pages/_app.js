@@ -3,7 +3,7 @@ import "tailwindcss/tailwind.css";
 import AppContext from "../components/AppContext";
 import React, { useEffect, useState } from "react";
 
-import { SessionProvider } from "next-auth/react";
+// import { SessionProvider } from "next-auth/react";
 
 export default function App({
   Component,
@@ -27,7 +27,7 @@ export default function App({
 
 
   return (
-    <SessionProvider session={session}>
+    // <SessionProvider session={session}>
       <AppContext.Provider value={{ message, setMessage, receiptsid, setReceiptsid, 
        customerid, setCustomerid, receiptsdate, setReceiptsdate, employeeid, setEmployeeid, 
        modeofpayment, setModeofpayment, salesoutletid, setSalesoutletid, ticketnumber, setTicketnumber, 
@@ -36,6 +36,6 @@ export default function App({
        }}>
         <Component {...pageProps} />
       </AppContext.Provider>
-    </SessionProvider>
+    // </SessionProvider>
   );
 }
