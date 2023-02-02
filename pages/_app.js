@@ -1,5 +1,6 @@
+import '../globals.css';
+
 import AppContext from "../components/AppContext";
-import '../styles/globals.css';
 import React, { useEffect, useState } from "react";
 
 // import { SessionProvider } from "next-auth/react";
