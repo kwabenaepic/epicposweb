@@ -1,12 +1,9 @@
-import { useEffect } from "react";
-import Head from "next/head";
-import Image from "next/image";
 import LeftNavigation from "../components/LeftNavigation";
 import HomeDashboard from "../components/HomeDashboard";
 import Login from "./login";
 
 const Navigatior = () => {
-  const isLoggedin = true;
+  const isLoggedin = false;
   if (!isLoggedin) {
     return (
       <div className="flex flex-row h-screen w-screen">
