@@ -155,22 +155,22 @@ const RightDetail = () => {
             <XMarkIcon className="h-6 w-6 text-white mr-3" />
             Cancel
           </button>
-          <button
+          {/* <button
             onClick={handleCashout}
             type="button"
             className="text-gray-900 bg-gray-100 w-5/6 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-2xl px-20 py-6 text-center inline-flex items-center justify-center dark:focus:ring-gray-500 mb-2"
           >
             <Cog6ToothIcon className="h-6 w-6 text-[#000000] mr-3" />
             Settings
-          </button>
+          </button> */}
           <Link href="/">
-            <button
-              type="button"
-              className="text-gray-900 bg-gray-100 w-5/6 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-2xl px-20 py-6 text-center inline-flex items-center justify-center dark:focus:ring-gray-500 mb-2"
+            <div
+       
+              className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-2xl px-20 py-6 text-center inline-flex items-center justify-center dark:focus:ring-gray-500 mb-2"
             >
               <HomeIcon className="h-6 w-6 text-[#000000] mr-3 " />
               Dashboard
-            </button>
+            </div>
           </Link>
           <button
             onClick={onCashout}
