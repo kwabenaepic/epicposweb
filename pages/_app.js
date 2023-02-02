@@ -1,4 +1,5 @@
-import "../styles/globals.css";
+import '@/styles/globals.css';
+
 import AppContext from "../components/AppContext";
 import React, { useEffect, useState } from "react";
 
