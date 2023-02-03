@@ -1,6 +1,6 @@
 import React from "react";
 
-const Login = () => {
+export default function Login() {
   return (
     <div className="flex w-screen h-screen items-center justify-center bg-[#db952c]">
       <div className="p-8 shadow-lg bg-white">
@@ -81,4 +81,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+
