@@ -1,7 +1,9 @@
+import React, { useEffect, useState } from "react";
+import AppContext from "../components/AppContext";
 import "../styles/globals.css"
 
-import AppContext from "../components/AppContext";
-import React, { useEffect, useState } from "react";
+
+
 
 // import { SessionProvider } from "next-auth/react";
 
