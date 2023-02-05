@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AppContext from "../components/AppContext";
-// import "../styles/globals.css"
+import "../styles/globals.css"
 
 
 

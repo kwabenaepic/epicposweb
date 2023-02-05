@@ -3,7 +3,7 @@ import HomeDashboard from "../components/HomeDashboard";
 import Login from "./login";
 
 const Navigatior = () => {
-  const isLoggedin = false;
+  const isLoggedin = true;
   if (!isLoggedin) {
     return (
       <div className="flex flex-row h-screen w-screen">

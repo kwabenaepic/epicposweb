@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import tw from "tailwind-styled-components";
 import Home from "../pages";
 import AppClass from "./AppClass";
 import Box from "@mui/material/Box";
@@ -29,59 +28,53 @@ const HomeDashboard = () => {
   };
 
   return (
-    <Main>
-      <Overview>Overview</Overview>
-      <Summary>
-        <SummaryItems>
-          <Title> Sum Sales Today</Title>
-          <Value> $ 0.00</Value>
-          <ButtomItems>
-            <Total>Total</Total>
-            <Icon></Icon>
-          </ButtomItems>
-        </SummaryItems>
-        <SummaryItems>
-          <Title> Total Items Sold Today</Title>
-          <Value> $ 0.00</Value>
-          <ButtomItems>
-            <Total>Total</Total>
-            <Icon></Icon>
-          </ButtomItems>
-        </SummaryItems>
-        <SummaryItems>
-          <Title> Sales This Month</Title>
-          <Value> $ 0.00</Value>
-          <ButtomItems>
-            <Total>Total</Total>
-            <Icon></Icon>
-          </ButtomItems>
-        </SummaryItems>
-        <SummaryItems>
-          <Title> Total Items Sold This Month</Title>
-          <Value> $ 0.00</Value>
-          <ButtomItems>
-            <Total>Total</Total>
-            <Icon></Icon>
-          </ButtomItems>
-        </SummaryItems>
-        <SummaryItems>
-          <Title> Stock Value</Title>
-          <Value> $ 0.00</Value>
-          <ButtomItems>
-            <Total>Total</Total>
-            <Icon></Icon>
-          </ButtomItems>
-        </SummaryItems>
-        <SummaryItems>
-          <Title> Sum Inventory</Title>
-          <Value> $ 0.00</Value>
-          <ButtomItems>
-            <Total>Total</Total>
-            <Icon></Icon>
-          </ButtomItems>
-        </SummaryItems>
-      </Summary>
-      <TablesContainer>{/* <ProductTable /> */}</TablesContainer>
+    <div className="flex-col p-8 w-screen">
+      <div className="border-b-2 mb-6 font-medium text-xl">Overview</div>
+      <div className="flex ">
+        <div className="shadow-md flex flex-auto flex-col mr-4 p-3 bg-gray-150 border-2">
+          <div className="text-orange-600 font-medium"> Sum Sales Today</div>
+          <div className="mt-3 mb-3"> $ 0.00</div>
+          <div>
+            <div className="font-xs text-orange-700 ">Total</div>
+          </div>
+        </div>
+        <div className="shadow-md flex flex-auto flex-col mr-4 p-3 bg-gray-150 border-2">
+          <div className="text-orange-600 font-medium"> Total Items Sold Today</div>
+          <div className="mt-3 mb-3"> $ 0.00</div>
+          <div>
+            <div className="font-xs text-orange-700 ">Total</div>
+          </div>
+        </div>
+        <div className="shadow-md flex flex-auto flex-col mr-4 p-3 bg-gray-150 border-2">
+          <div className="text-orange-600 font-medium">Sales This Month</div>
+          <div className="mt-3 mb-3"> $ 0.00</div>
+          <div>
+            <div className="font-xs text-orange-700 ">Total</div>
+          </div>
+        </div>
+        <div className="shadow-md flex flex-auto flex-col mr-4 p-3 bg-gray-150 border-2">
+          <div className="text-orange-600 font-medium">Total Items Sold This Month</div>
+          <div className="mt-3 mb-3"> $ 0.00</div>
+          <div>
+            <div className="font-xs text-orange-700 ">Total</div>
+          </div>
+        </div>
+        <div className="shadow-md flex flex-auto flex-col mr-4 p-3 bg-gray-150 border-2">
+          <div className="text-orange-600 font-medium">Stock Value</div>
+          <div className="mt-3 mb-3"> $ 0.00</div>
+          <div>
+            <div className="font-xs text-orange-700 ">Total</div>
+          </div>
+        </div>
+        <div className="shadow-md flex flex-auto flex-col mr-4 p-3 bg-gray-150 border-2">
+          <div className="text-orange-600 font-medium">Sum Inventory</div>
+          <div className="mt-3 mb-3"> $ 0.00</div>
+          <div>
+            <div className="font-xs text-orange-700 ">Total</div>
+          </div>
+        </div>
+      </div>
+      <div>{/* <ProductTable /> */}</div>
       <div className="flex flex-row h-98 w-full mt-6">
         <div className="flex flex-1 flex-col 200 p-2 m-1">
           <div className="text-xl font-medium mb-1">Top 10 Selling</div>
@@ -143,42 +136,9 @@ const HomeDashboard = () => {
       </div>
 
       {/* <AppClass /> */}
-    </Main>
+    </div>
   );
 };
 
 export default HomeDashboard;
 
-const Main = tw.div`
-flex-col p-8 w-screen
-`;
-const Overview = tw.div`
-border-b-2 mb-6 font-medium text-xl
-`;
-const Summary = tw.div`
-flex 
-`;
-const SummaryItems = tw.div`
-shadow-md flex flex-auto flex-col mr-4 p-3 bg-gray-150 border-2
-`;
-const Title = tw.div`
-text-orange-600 font-medium
-`;
-const Value = tw.div`
-mt-3 mb-3
-`;
-const ButtomItems = tw.div`
-
-`;
-const Total = tw.div`
-font-xs text-orange-700 
-`;
-const Icon = tw.div`
-
-`;
-const TablesContainer = tw.div`
-flex flex-col shadow-md 
-`;
-const Table = tw.table`
-table-auto
-`;
