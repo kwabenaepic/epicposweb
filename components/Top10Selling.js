@@ -34,11 +34,11 @@ const Top10Selling = () => {
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
   const toptenSelling = async () => {
-    // const response = await fetch("http://localhost:8080/api/v1/products");
+    // const response = await fetch("http://45.63.94.108:8080/api/v1/products");
     // const data = await response.json();
     // setProductList(data);
 
-    await fetch("http://localhost:8080/toptenselling")
+    await fetch("http://45.63.94.108:8080/toptenselling")
       .then((response) => {
         return response.json();
       })

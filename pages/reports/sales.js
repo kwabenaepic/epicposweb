@@ -82,7 +82,7 @@ const Sales = () => {
   };
 
   const loadSales = async () => {
-    await fetch("http://localhost:8080/salereports")
+    await fetch("http://45.63.94.108:8080/salereports")
       .then((response) => {
         return response.json();
       })
@@ -94,7 +94,7 @@ const Sales = () => {
 
   const getSaleItem = async (ticketnumber, row) => {
     await fetch(
-      "http://localhost:8080/productbyticketnumber/ticketnumber?ticketnumber=" +
+      "http://45.63.94.108:8080/productbyticketnumber/ticketnumber?ticketnumber=" +
         ticketnumber
     )
       .then((response) => {

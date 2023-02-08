@@ -27,14 +27,14 @@ const ProductTable = (props) => {
 
   useEffect(() => {
     async function loadProducts() {
-      const result = await Axios.get("http://localhost:8080/products/");
+      const result = await Axios.get("http://45.63.94.108:8080/products/");
       setProductList(result.data);
     }
     loadProducts();
   }, []);
 
   const loadProducts = async () => {
-    const result = await Axios.get("http://localhost:8080/products/");
+    const result = await Axios.get("http://45.63.94.108:8080/products/");
     setProductList(result.data);
   };
 

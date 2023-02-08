@@ -59,7 +59,7 @@ export default function AddInventory({ showAddInventry, setShowAddInventry }) {
   };
 
   const addProduct = () => {
-    Axios.post("http://localhost:8080/products", {
+    Axios.post("http://45.63.94.108:8080/products", {
       name: name,
       description: description,
       size: size,
