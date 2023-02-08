@@ -43,7 +43,7 @@ const RightDetail = () => {
     }
   };
   const saveReceipt = () => {
-    Axios.post("http://localhost:9999/api/v1/receipts", {
+    Axios.post("http://localhost:8080/receipts", {
       customerid: ticketnumber,
       receiptdate: getDate() + " " + getTime(),
       employeeid: context.employeeid,
@@ -72,7 +72,7 @@ const RightDetail = () => {
   };
 
   const saveSaleItem = () => {
-    Axios.post("http://localhost:9999/api/v1/saleitemsall", saleitems)
+    Axios.post("http://localhost:8080/saleitemsall", saleitems)
       .then((response) => {
         console.log(response.status);
         setPostResponse(response.status);

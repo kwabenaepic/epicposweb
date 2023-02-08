@@ -12,7 +12,7 @@ const PosClient = () => {
 
   // useEffect(()=>{
   //   console.log("Code");
-  //   Axios.get("http://localhost:9999/api/v1/products/")
+  //   Axios.get("http://localhost:8080/api/v1/products/")
   //   .catch(function (error){
   //     if(error.response){
   //       console.log(error.response.data);
@@ -31,7 +31,7 @@ const PosClient = () => {
     // loadProducts();
   }, []);
   // const loadProducts = async () => {
-  //   const result = await Axios.get("http://localhost:9999/api/v1/products/");
+  //   const result = await Axios.get("http://localhost:8080/api/v1/products/");
   //   console.log(result.data);
   // };
 

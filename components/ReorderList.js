@@ -35,11 +35,11 @@ const ReorderList = () => {
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
   const toptenSelling = async () => {
-    // const response = await fetch("http://localhost:9999/api/v1/products");
+    // const response = await fetch("http://localhost:8080/api/v1/products");
     // const data = await response.json();
     // setProductList(data);
 
-    await fetch("http://localhost:9999/reorderlist")
+    await fetch("http://localhost:8080/reorderlist")
       .then((response) => {
         return response.json();
       })
