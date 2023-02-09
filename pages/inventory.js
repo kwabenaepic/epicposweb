@@ -100,7 +100,7 @@ console.log(productList)
 
   const loadProducts = async () => {
 
-    await fetch("http://45.63.94.108:8080/products")
+    await fetch("http://45.63.94.108/products")
       .then((response) => {
         return response.json();
       })
